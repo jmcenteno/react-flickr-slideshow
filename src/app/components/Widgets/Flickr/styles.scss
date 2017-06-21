@@ -1,14 +1,17 @@
+@import '../../../../scss/theme/variables';
+@import '../../../../scss/theme/mixins';
+
 .flickr-widget {
 
   .carousel {
-    background-color: #212121;
+    background-color: $gray-darker;
 
     .carousel-inner {
-      height: 320px;
+      @include responsive-rectangle(66.6%);
     }
 
     .item {
-      height: 100%;
+      @include responsive-rectangle-content();
       background: no-repeat 50% 50%;
       background-size: contain;
     }

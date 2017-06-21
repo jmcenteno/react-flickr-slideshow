@@ -1,7 +1,10 @@
+@import '../../../../../scss/theme/variables';
+@import '../../../../../scss/theme/mixins';
+
 .flickr-widget {
   
   .flickr-thumbnails {
-    background-color: #212121;
+    background-color: $gray-darker;
     padding: 8px;
 
     &-slides {
@@ -11,18 +14,12 @@
 
       .slide {
         margin: 0 4px;
-        position: relative;
         border: solid 2px transparent;
         display: block;
         cursor: pointer;
         transition: all 150ms ease-out;
         overflow: hidden;
-        
-        &:before {
-          content: '';
-          display: block;
-          padding-top: 80%;
-        }
+        @include responsive-rectangle();
 
         > div {
           background: no-repeat 50% 50% / cover;
@@ -34,7 +31,7 @@
           transition: all 200ms ease-out;
           opacity: 0.7;
           filter: sepia(0.3);
-          box-shadow: 0 0 24px #000 inset;
+          box-shadow: 0 0 24px $gray-darker inset;
         }
 
         &:hover {
@@ -48,7 +45,7 @@
         }
 
         &.active {
-          border-color: #18BC9C;
+          border-color: $gray-lighter;
 
           > div {
             filter: sepia(0);

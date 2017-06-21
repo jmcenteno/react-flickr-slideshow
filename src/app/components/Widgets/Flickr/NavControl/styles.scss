@@ -1,5 +1,7 @@
+@import '../../../../../scss/theme/variables';
+
 .flickr-widget .carousel-control {
-  background: rgba(#212121, 0.5);
+  background: rgba($gray-darker, 0.5);
   cursor: pointer;
   border-radius: 50%;
   margin: 0 16px;
@@ -12,7 +14,7 @@
   transition: all 250ms ease;
 
   &:active {
-    background-color: rgba(#212121, 0.8);
+    background-color: rgba($gray-darker, 0.8);
   }
   
   &.left,

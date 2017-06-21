@@ -6,7 +6,10 @@ import './styles.scss';
 function FlickrNavControl({ direction, onClick }) {
 
   return (
-    <a className={`carousel-control ${direction}`} onClick={onClick}>
+    <a
+      className={`carousel-control ${direction}`}
+      onClick={onClick}
+      title={ direction === 'right' ? 'Next' : 'Previous' }>
       <i className={`glyphicon glyphicon-menu-${direction}`} />
     </a>
   );

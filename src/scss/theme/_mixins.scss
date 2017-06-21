@@ -1,0 +1,17 @@
+@mixin responsive-rectangle($percentage: 80%) {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    padding-top: $percentage;
+  }
+
+}
+
+@mixin responsive-rectangle-content() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}

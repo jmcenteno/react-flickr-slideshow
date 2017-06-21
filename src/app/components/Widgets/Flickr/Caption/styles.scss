@@ -1,10 +1,12 @@
+@import '../../../../../scss/theme/variables';
+
 .flickr-widget .carousel-caption {
   text-align: left;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 16px;
-  background-color: rgba(#212121, 0.5);
+  background-color: rgba($gray-darker, 0.5);
 
   .carousel-caption {
     

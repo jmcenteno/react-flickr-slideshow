@@ -60,12 +60,15 @@ export default class FlickrSearchForm extends Component {
               placeholder='Enter search criteria'
               defaultValue={ query }
               onChange={ this.handleOnChange }
-              className='form-control' />
+              className='form-control'
+              aria-label='Enter search criteria'
+            />
             <span className='input-group-btn'>
               <button
                 type='submit'
                 disabled={ query === '' }
-                className='btn btn-primary'>
+                className='btn btn-primary'
+                aria-label='Submit'>
                 <i className='glyphicon glyphicon-search' />
               </button>
             </span>
