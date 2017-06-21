@@ -1,0 +1,21 @@
+.spinner {
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+
+  > div {
+    flex: 1;
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  .spinner-text {
+    padding: 16px 0;
+  }
+
+}

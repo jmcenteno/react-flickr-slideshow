@@ -1,0 +1,35 @@
+.flickr-widget .carousel-control {
+  background: rgba(#212121, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  line-height: 52px;
+  font-size: 24px;
+  transition: all 250ms ease;
+
+  &:active {
+    background-color: rgba(#212121, 0.8);
+  }
+  
+  &.left,
+  &.right {
+    background-image: none;
+  }
+
+  &.left:active .glyphicon {
+    margin-left: -4px;
+  }
+
+  &.right:active .glyphicon {
+    margin-right: -4px;
+  }
+
+  .glyphicon {
+    transition: all 250ms ease;
+  }
+
+}

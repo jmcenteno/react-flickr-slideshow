@@ -1,0 +1,67 @@
+.flickr-widget {
+  
+  .flickr-thumbnails {
+    background-color: #212121;
+    padding: 8px;
+
+    &-slides {
+      display: flex;
+      flex-direction: row;
+      margin: 0 -4px;
+
+      .slide {
+        margin: 0 4px;
+        position: relative;
+        border: solid 2px transparent;
+        display: block;
+        cursor: pointer;
+        transition: all 150ms ease-out;
+        overflow: hidden;
+        
+        &:before {
+          content: '';
+          display: block;
+          padding-top: 80%;
+        }
+
+        > div {
+          background: no-repeat 50% 50% / cover;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all 200ms ease-out;
+          opacity: 0.7;
+          filter: sepia(0.3);
+          box-shadow: 0 0 24px #000 inset;
+        }
+
+        &:hover {
+
+          > div {
+            transform: scale(1.2);
+            filter: sepia(0);
+            opacity: 0.8;
+          }
+          
+        }
+
+        &.active {
+          border-color: #18BC9C;
+
+          > div {
+            filter: sepia(0);
+            box-shadow: none;
+            opacity: 1;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
