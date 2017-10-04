@@ -1,4 +1,4 @@
-# Univision Code Assignment
+# React Flickr Slideshow
 
 An app that searches images from Flickr built with ReactJS, Redux and Webpack.
 
