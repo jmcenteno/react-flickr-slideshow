@@ -1,6 +1,6 @@
 # React Flickr Slideshow
 
-An app that searches images from Flickr built with ReactJS, Redux and Webpack.
+An app that searches and displays images from Flickr built with ReactJS, Redux and Webpack.
 
 ## Setup
 
